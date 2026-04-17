@@ -13,6 +13,7 @@ const PRECACHE = [
     "/assets/js/convert.js",
     "/assets/js/modals.js",
     "/assets/js/i18n.js",
+    "/assets/js/icons.js",
     "/manifest.json",
     "/assets/img/favicon.svg",
     "/assets/img/apple-touch-icon.png",

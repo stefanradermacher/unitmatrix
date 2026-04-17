@@ -1,19 +1,11 @@
-// Run with: node test.js
-"use strict";
-
-// units.js uses ES module syntax; load it via Function constructor in CJS context
-// noinspection JSUnresolvedFunction
-const { readFileSync } = require("fs");
-const _unitsSrc = readFileSync("./assets/js/units.js", "utf8")
-    .replace(/^export\s+const\s+/m, "const ");
-// noinspection JSCheckFunctionSignatures
-const UNITS = new Function(`${_unitsSrc}\nreturn UNITS;`)();
+// Run with: node test.mjs
+import { UNITS } from "./assets/js/units.js";
 
 // ─── Conversion helpers (mirrors app.js logic) ───────────────────────────────
 
 function toBase(unit, value) {
-    if (typeof unit.toBase   === "function") return unit.toBase(value);
-    if (typeof unit.factor   === "number")   return value * unit.factor;
+    if (typeof unit.toBase === "function") return unit.toBase(value);
+    if (typeof unit.factor === "number")   return value * unit.factor;
     throw new Error("Unit has neither toBase nor factor");
 }
 
@@ -94,5 +86,4 @@ check("1 ha   = 10000 m²",       convert(1,    "ha",  "m2",  UNITS.area),     1
 
 const total = passed + failed;
 console.log(`\n${passed}/${total} tests passed${failed > 0 ? ` — ${failed} FAILED` : " ✓"}`);
-// noinspection JSUnresolvedVariable
 if (failed > 0) process.exit(1);
