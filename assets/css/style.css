@@ -4,6 +4,8 @@
     --matrix-gap: 8px;
     --radius: 10px;
     --logo-blue: #37a4ff;
+    --invalid-color: #dc2626;
+    --warn-color: #b45309;
 }
 
 /* SYSTEM THEMING: Base + 4 Themes */
@@ -536,6 +538,37 @@ select:hover {
     margin-top: 8px;
     font-size: 14px;
     opacity: 0.75;
+}
+
+.fatal-error {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    padding: 24px;
+}
+
+.fatal-error-box {
+    background: var(--panel, #fff);
+    color: var(--text, #1a1a2e);
+    border-radius: var(--radius, 10px);
+    padding: 32px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+}
+
+.fatal-error-box h2 {
+    margin: 0 0 12px;
+}
+
+.fatal-error-box p {
+    margin: 0 0 24px;
+    opacity: 0.8;
 }
 
 .below-abs-zero-warn {

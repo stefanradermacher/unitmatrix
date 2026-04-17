@@ -375,5 +375,7 @@ const UNITS = {
             GB_s:   {factor: 8e9,         symbol: "GB/s"}
         }
     }
-
 };
+
+// noinspection JSUnresolvedVariable
+if (typeof module !== "undefined") module.exports = UNITS;
