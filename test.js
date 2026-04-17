@@ -1,8 +1,13 @@
 // Run with: node test.js
 "use strict";
 
-// noinspection JSUnresolvedVariable,JSUnresolvedFunction
-const UNITS = require("./assets/js/units.js");
+// units.js uses ES module syntax; load it via Function constructor in CJS context
+// noinspection JSUnresolvedFunction
+const { readFileSync } = require("fs");
+const _unitsSrc = readFileSync("./assets/js/units.js", "utf8")
+    .replace(/^export\s+const\s+/m, "const ");
+// noinspection JSCheckFunctionSignatures
+const UNITS = new Function(`${_unitsSrc}\nreturn UNITS;`)();
 
 // ─── Conversion helpers (mirrors app.js logic) ───────────────────────────────
 

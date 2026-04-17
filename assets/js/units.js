@@ -1,4 +1,4 @@
-const UNITS = {
+export const UNITS = {
 
     length: {
         base: "m",
@@ -376,6 +376,3 @@ const UNITS = {
         }
     }
 };
-
-// noinspection JSUnresolvedVariable
-if (typeof module !== "undefined") module.exports = UNITS;

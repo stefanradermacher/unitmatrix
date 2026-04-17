@@ -1,4 +1,4 @@
-const VERSION = "v1";
+const VERSION = "v2";
 const CACHE = `unitmatrix-${VERSION}`;
 
 const PRECACHE = [
@@ -6,8 +6,13 @@ const PRECACHE = [
     "/impressum.html",
     "/datenschutz.html",
     "/assets/css/style.css",
-    "/assets/js/units.js",
     "/assets/js/app.js",
+    "/assets/js/units.js",
+    "/assets/js/state.js",
+    "/assets/js/theme.js",
+    "/assets/js/convert.js",
+    "/assets/js/modals.js",
+    "/assets/js/i18n.js",
     "/manifest.json",
     "/assets/img/favicon.svg",
     "/assets/img/apple-touch-icon.png",

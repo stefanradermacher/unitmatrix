@@ -1,6 +1,5 @@
-window.LOCALES = window.LOCALES || {};
 
-window.LOCALES["zh"] = {
+export default {
     code: "zh",
     name: "中文",
     htmlLang: "zh-CN",

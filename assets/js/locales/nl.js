@@ -1,6 +1,5 @@
-window.LOCALES = window.LOCALES || {};
 
-window.LOCALES["nl"] = {
+export default {
     code: "nl",
     name: "Nederlands",
     commaDecimal: true,

@@ -1,6 +1,5 @@
-window.LOCALES = window.LOCALES || {};
 
-window.LOCALES["ja"] = {
+export default {
     code: "ja",
     name: "日本語",
     htmlLang: "ja-JP",
