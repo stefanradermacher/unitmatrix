@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="180" height="180"
+     viewBox="0 0 180 180">
+
+  <defs>
+    <style>
+      .blue   { fill: #37a4ff; }
+      .yellow { fill: #ffd952; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="180" height="180" rx="38" ry="38" fill="#0d0d1a"/>
+
+  <!-- 4×4 matrix, centered: cell=28px, gap=8px, total=4*28+3*8=136px → offset=22 -->
+  <g transform="translate(22, 22)">
+    <rect x="0"  y="0"  width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="36" y="0"  width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="72" y="0"  width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="108" y="0" width="28" height="28" rx="5" ry="5" class="blue"/>
+
+    <rect x="0"  y="36" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="36" y="36" width="28" height="28" rx="5" ry="5" class="yellow"/>
+    <rect x="72" y="36" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="108" y="36" width="28" height="28" rx="5" ry="5" class="blue"/>
+
+    <rect x="0"  y="72" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="36" y="72" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="72" y="72" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="108" y="72" width="28" height="28" rx="5" ry="5" class="blue"/>
+
+    <rect x="0"  y="108" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="36" y="108" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="72" y="108" width="28" height="28" rx="5" ry="5" class="blue"/>
+    <rect x="108" y="108" width="28" height="28" rx="5" ry="5" class="blue"/>
+  </g>
+
+</svg>

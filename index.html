@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="sky">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>UnitMatrix — Universal Unit Converter</title>
+    <meta name="description" content="Convert units instantly with UnitMatrix: a fast, accurate, privacy-friendly unit converter with no tracking and full offline capability.">
+    <meta name="keywords" content="unit converter, measurement converter, unitmatrix, metric, imperial, conversion tool">
+    <meta name="theme-color" content="#d9efff">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://unitmatrix.net/">
+
+<!-- Open Graph -->
+    <meta property="og:title" content="UnitMatrix — Universal Unit Converter">
+    <meta property="og:description" content="Convert units instantly: fast, accurate and privacy-friendly. No tracking, no ads.">
+    <meta property="og:url" content="https://unitmatrix.net/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://unitmatrix.net/assets/img/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="UnitMatrix — Universal Unit Converter">
+    <meta name="twitter:description" content="Convert units instantly: fast, accurate and privacy-friendly.">
+    <meta name="twitter:image" content="https://unitmatrix.net/assets/img/og-image.png">
+
+    <!-- Favicon + PWA -->
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="UnitMatrix">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "UnitMatrix",
+            "alternateName": "Universal Unit Converter",
+            "description": "A fast, accurate, privacy-friendly unit converter for length, area, volume, mass, temperature, time, speed, pressure, energy, power, force, torque, voltage, current, frequency, data storage, resistance, density, fuel economy, flow, luminance, radioactivity, viscosity and data rate.",
+            "url": "https://unitmatrix.net",
+            "applicationCategory": "UtilityApplication",
+            "operatingSystem": "All",
+            "inLanguage": ["en","de","es","fr","nl","pl","pt","ru","tr","uk","ja","zh"],
+            "featureList": "Length, Area, Volume, Mass, Temperature, Time, Speed, Pressure, Energy, Power, Force, Torque, Voltage, Current, Frequency, Data Storage, Resistance, Density, Fuel Economy, Flow, Luminance, Radioactivity, Viscosity, Data Rate",
+            "offers": {
+                "@type": "Offer",
+                "price": "0.00",
+                "priceCurrency": "EUR"
+            }
+        }
+    </script>
+
+    <!-- CSS + fonts -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+<div class="page-wrapper">
+    <header class="header">
+        <div class="header-left">
+            <div class="logo-row">
+                <div class="logo-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="610" height="120" viewBox="0 0 610 120"
+                         aria-label="UnitMatrix Logo" role="img">
+                        <g transform="translate(5,5)">
+                            <!-- 4×4 Matrix Icon -->
+                            <g id="matrix">
+                                <rect x="0" y="0" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="25" y="0" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="50" y="0" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="75" y="0" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+
+                                <rect x="0" y="25" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="25" y="25" width="20" height="20" rx="3" ry="3" fill="#ffd952"/>
+                                <rect x="50" y="25" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="75" y="25" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+
+                                <rect x="0" y="50" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="25" y="50" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="50" y="50" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="75" y="50" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+
+                                <rect x="0" y="75" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="25" y="75" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="50" y="75" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                                <rect x="75" y="75" width="20" height="20" rx="3" ry="3" fill="#37a4ff"/>
+                            </g>
+
+                            <g aria-hidden="true">
+                                <path transform="translate(115.000,80) scale(0.039062,-0.039062)" d="M1110 1490H1290V504Q1290 351 1218.5 231.5Q1147 112 1017.0 43.0Q887 -26 712 -26Q537 -26 406.5 43.0Q276 112 204.0 231.5Q132 351 132 504V1490H312V518Q312 409 360.0 324.0Q408 239 498.0 190.5Q588 142 712 142Q836 142 925.0 190.5Q1014 239 1062.0 324.0Q1110 409 1110 518Z" fill="#37a4ff"/>
+                                <path transform="translate(172.547,80) scale(0.039062,-0.039062)" d="M1316 1490V0H1138L328 1170H312V0H132V1490H306L1122 318H1136V1490Z" fill="#37a4ff"/>
+                                <path transform="translate(231.109,80) scale(0.039062,-0.039062)" d="M312 1490V0H132V1490Z" fill="#37a4ff"/>
+                                <path transform="translate(250.453,80) scale(0.039062,-0.039062)" d="M50 1330V1490H1168V1330H700V0H520V1330Z" fill="#37a4ff"/>
+                                <path transform="translate(300.031,80) scale(0.039062,-0.039062)" d="M132 1490H348L854 254H872L1378 1490H1601V0H1424V1132H1410L941 0H779L316 1132H302V0H132Z" fill="#37a4ff"/>
+                                <path transform="translate(369.727,80) scale(0.039062,-0.039062)" d="M194 0H4L552 1490H738L1284 0H1096L650 1254H638ZM264 582H1026V422H264Z" fill="#37a4ff"/>
+                                <path transform="translate(422.039,80) scale(0.039062,-0.039062)" d="M50 1330V1490H1168V1330H700V0H520V1330Z" fill="#37a4ff"/>
+                                <path transform="translate(471.617,80) scale(0.039062,-0.039062)" d="M132 0V1490H636Q811 1490 922.5 1430.5Q1034 1371 1088.0 1267.5Q1142 1164 1142 1032Q1142 901 1088.5 799.0Q1035 697 923.5 639.5Q812 582 638 582H232V744H632Q752 744 825.0 779.0Q898 814 931.0 878.5Q964 943 964 1032Q964 1122 930.5 1189.0Q897 1256 824.0 1293.0Q751 1330 630 1330H312V0ZM990 0 630 670H834L1200 0Z" fill="#37a4ff"/>
+                                <path transform="translate(521.039,80) scale(0.039062,-0.039062)" d="M312 1490V0H132V1490Z" fill="#37a4ff"/>
+                                <path transform="translate(540.383,80) scale(0.039062,-0.039062)" d="M220 1490 604 870H616L1000 1490H1212L744 744L1212 0H1000L616 608H604L220 0H8L488 744L8 1490Z" fill="#37a4ff"/>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <p class="tagline">All Units. One Matrix.</p>
+        </div>
+
+        <div class="header-right">
+            <div class="lang-select-wrapper">
+                <label for="languageSelect" class="sr-only">Language</label>
+                <select id="languageSelect" class="lang-select">
+                </select>
+            </div>
+            <div class="theme-select-wrapper">
+                <label for="themeSelect" class="sr-only">Theme</label>
+                <select id="themeSelect" class="theme-select">
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" role="main">
+        <!-- Left Panel: Converter -->
+        <section class="panel converter-panel">
+            <h1 id="categoryTitle">Length</h1>
+            <div class="converter-box">
+                <label for="unitFrom">From</label>
+                <select id="unitFrom"></select>
+
+                <label for="inputValue" class="sr-only">Input value</label>
+                <input type="text" inputmode="decimal" id="inputValue" value="1">
+
+                <label for="unitTo">To</label>
+                <select id="unitTo"></select>
+
+                <label for="outputValue" class="sr-only">Output value</label>
+                <input type="text" id="outputValue" readonly>
+
+                <div class="converter-actions">
+                    <div class="converter-actions-right">
+                        <button type="button" id="copyResultBtn" class="copy-btn">
+                            Copy result
+                        </button>
+                        <button
+                                type="button"
+                                id="swapUnitsBtn"
+                                class="swap-btn"
+                                aria-label="Swap units">
+                            ⇅
+                        </button>
+                    </div>
+                </div>
+
+                <div id="conversionSummary" class="conversion-summary"></div>
+                <p id="belowAbsZeroWarn" class="below-abs-zero-warn" hidden></p>
+            </div>
+        </section>
+
+        <!-- Right Panel: Unit Matrix -->
+        <section class="panel unitmatrix-panel">
+            <div class="matrix-main">
+                <div class="unitmatrix-grid">
+                    <!-- Row 1 -->
+                    <button class="cat-btn" type="button" data-cat="length">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <rect x="3" y="8" width="18" height="8" rx="2"></rect>
+                                <path d="M7 8v2"></path>
+                                <path d="M11 8v2"></path>
+                                <path d="M15 8v2"></path>
+                                <path d="M19 8v2"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Length</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="area">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <rect x="5" y="5" width="14" height="14" rx="1.5"></rect>
+                                <path d="M9 5v4H5"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Area</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="volume">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M8 4h8"></path>
+                                <path d="M10 4v4.5l-2.5 7.5a2 2 0 0 0 1.9 2.5h5.2a2 2 0 0 0 1.9-2.5L14 8.5V4"></path>
+                                <path d="M9 12h6"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Volume</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="mass">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <rect x="8" y="9" width="8" height="7" rx="1.5"></rect>
+                                <path d="M10 9V7a2 2 0 0 1 4 0v2"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Mass</span>
+                    </button>
+
+                    <!-- Row 2 -->
+                    <button class="cat-btn" type="button" data-cat="temperature">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M12 4v9"></path>
+                                <circle cx="12" cy="17" r="3"></circle>
+                                <rect x="10" y="4" width="4" height="7" rx="2"></rect>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Temperature</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="time">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <circle cx="12" cy="12" r="7"></circle>
+                                <path d="M12 9v4l2 2"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Time</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="speed">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M5 17a7 7 0 0 1 14 0"></path>
+                                <path d="M12 10l3 3"></path>
+                                <path d="M5 17h14"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Speed</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="pressure">
+                        <span class="cat-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <circle cx="12" cy="12" r="7"></circle>
+                                <path d="M12 12l-2.5 3"></path>
+                                <path d="M9 7l1 2"></path>
+                                <path d="M15 7l-1 2"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Pressure</span>
+                    </button>
+
+                    <!-- Row 3 -->
+                    <button class="cat-btn" type="button" data-cat="energy">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Energy: Lightning bolt -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M11 3L5 14h5l-1 7 6-11h-5l1-7z"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Energy</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="power">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Power: Power symbol -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M12 3v7"></path>
+                                <path d="M7.5 5.75A7 7 0 1 0 16.5 5.75"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Power</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="force">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Force: Arrow with block -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <rect x="4" y="10" width="6" height="4" rx="1"></rect>
+                                <path d="M10 12h10"></path>
+                                <path d="M16 9l4 3-4 3"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Force</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="torque">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Torque: Rotating arrow around bolt -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M7 7a7 7 0 0 1 10 0"></path>
+                                <path d="M7 17a7 7 0 0 0 10 0"></path>
+                                <path d="M7 7H5V5"></path>
+                                <path d="M17 17h2v2"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Torque</span>
+                    </button>
+
+                    <!-- Row 4: Voltage, Current, Frequency, Data -->
+                    <button class="cat-btn" type="button" data-cat="voltage">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Voltage: V with probes -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M8 5l4 14 4-14"></path>
+                                <path d="M5 5v4"></path>
+                                <path d="M19 15v4"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Voltage</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="current">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Current: I with arrows -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M12 4v16"></path>
+                                <path d="M9 7h6"></path>
+                                <path d="M9 17h6"></path>
+                                <path d="M10 21l2-1 2 1"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Current</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="frequency">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Frequency: Sine wave -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <path d="M3 14c2-4 4-4 6 0s4 4 6 0 4-4 6 0"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Frequency</span>
+                    </button>
+
+                    <button class="cat-btn" type="button" data-cat="storage">
+                        <span class="cat-icon" aria-hidden="true">
+                            <!-- Data: Stacked disks (database) -->
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="1.8"
+                                 stroke-linecap="round" stroke-linejoin="round"
+                                 focusable="false">
+                                <ellipse cx="12" cy="6" rx="5" ry="2.5"></ellipse>
+                                <path d="M7 6v4c0 1.4 2.2 2.5 5 2.5s5-1.1 5-2.5V6"></path>
+                                <path d="M7 10v4c0 1.4 2.2 2.5 5 2.5s5-1.1 5-2.5v-4"></path>
+                            </svg>
+                        </span>
+                        <span class="cat-label">Data</span>
+                    </button>
+
+                </div>
+
+                <button class="matrix-toggle" type="button">More units&hellip;</button>
+            </div>
+
+            <div class="unitmatrix-extra" hidden>
+                <!-- Extra categories, same pattern: type="button", aria-hidden, focusable="false" -->
+                <!-- Resistance, density, fuel_economy, flow, luminance, radioactivity, viscosity, data_rate -->
+                <button class="cat-btn" type="button" data-cat="resistance">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Resistance: Resistor -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <path d="M3 12h3l2 4 4-8 3 8 2-4h4"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Resistance</span>
+                </button>
+
+                <button class="cat-btn" type="button" data-cat="density">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Density: layered blocks -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <rect x="4" y="5" width="16" height="4" rx="1"/>
+                            <rect x="4" y="10" width="16" height="4" rx="1"/>
+                            <rect x="4" y="15" width="16" height="4" rx="1"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Density</span>
+                </button>
+
+                <button class="cat-btn" type="button" data-cat="fuel_economy">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Fuel economy: gauge with droplet -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <circle cx="12" cy="13" r="7"/>
+                            <path d="M12 13l4-4"/>
+                            <path d="M7 5c1-1 2.5-2 5-2"/>
+                            <path d="M17 5c-.5-.5-1.2-1-2-1.3"/>
+                            <path d="M5 19s2-2 3-4"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Fuel economy</span>
+                </button>
+
+                <button class="cat-btn" type="button" data-cat="flow">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Flow: pipe with arrow -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <rect x="3" y="9" width="12" height="6" rx="2"/>
+                            <path d="M15 12h3"/>
+                            <path d="M18 9l3 3-3 3"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Flow</span>
+                </button>
+
+                <button class="cat-btn" type="button" data-cat="luminance">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Luminance: light bulb -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <path d="M9 14c-1.2-1-2-2.5-2-4a5 5 0 1 1 10 0c0 1.5-.8 3-2 4"/>
+                            <path d="M10 17h4"/>
+                            <path d="M9 20h6"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Luminance</span>
+                </button>
+
+                <button class="cat-btn" type="button" data-cat="radioactivity">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Radioactivity: trefoil -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <circle cx="12" cy="12" r="2"/>
+                            <path d="M13.7 4.3A7 7 0 0 1 19 11h-4"/>
+                            <path d="M10.3 4.3A7 7 0 0 0 5 11h4"/>
+                            <path d="M5.6 13a7 7 0 0 0 3.5 6.1l2-3.5"/>
+                            <path d="M18.4 13a7 7 0 0 1-3.5 6.1l-2-3.5"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Radioactivity</span>
+                </button>
+
+                <button class="cat-btn" type="button" data-cat="viscosity">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Viscosity: droplet with drag lines -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <path d="M12 4s-4 4.5-4 7.5A4 4 0 0 0 12 16a4 4 0 0 0 4-4.5C16 8.5 12 4 12 4z"/>
+                            <path d="M5 18h3"/>
+                            <path d="M16 18h3"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Viscosity</span>
+                </button>
+
+                <button class="cat-btn" type="button" data-cat="data_rate">
+                    <span class="cat-icon" aria-hidden="true">
+                        <!-- Data rate: arrows & bits -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                             stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                             focusable="false">
+                            <path d="M4 9h8"/>
+                            <path d="M8 5l4 4-4 4"/>
+                            <path d="M12 15h8"/>
+                            <path d="M16 11l4 4-4 4"/>
+                        </svg>
+                    </span>
+                    <span class="cat-label">Data rate</span>
+                </button>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div id="footerSupport"></div>
+        <div id="footerLinks">
+            <a href="/impressum.html" id="impressumLink"></a>
+            <span aria-hidden="true"> · </span>
+            <a href="/datenschutz.html" id="privacyLink"></a>
+            <span aria-hidden="true"> · </span>
+            <a href="https://github.com/stefanradermacher/unitmatrix" target="_blank" rel="noopener">GitHub</a>
+            <span aria-hidden="true"> · </span>
+            <span>&copy; 2026 UnitMatrix</span>
+        </div>
+    </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacyModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="privacyModalTitle">
+            <button type="button" class="modal-close" aria-label="Close privacy dialog" data-modal-close>
+                ×
+            </button>
+            <h2 id="privacyModalTitle"></h2>
+            <div id="privacyModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Support / Donate Modal -->
+    <div id="supportModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="supportModalTitle">
+            <button type="button" class="modal-close" aria-label="Close support dialog" data-modal-close>
+                ×
+            </button>
+            <h2 id="supportModalTitle"></h2>
+            <div id="supportModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Impressum / Legal Notice Modal -->
+    <div id="impressumModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="impressumModalTitle">
+            <button type="button" class="modal-close" aria-label="Close legal notice dialog" data-modal-close>
+                ×
+            </button>
+            <h2 id="impressumModalTitle"></h2>
+            <div id="impressumModalBody"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/units.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</div> <!-- .page-wrapper -->
+
+</body>
+</html>

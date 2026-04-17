@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="120" height="120" viewBox="0 0 120 120">
+
+    <!-- Weißer Hintergrund -->
+    <rect x="0" y="0" width="120" height="120" fill="#eef7ff"/>
+
+    <!-- Kompakte Matrix (46×46 px) stark eingerückt für runde Avatare -->
+    <g transform="translate(37,37)">
+        <!-- Quadrate: 10px, Abstand: 2px; Positionen: 0, 12, 24, 36 -->
+
+        <!-- Zeile 1 -->
+        <rect x="0"  y="0"  width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="12" y="0"  width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="24" y="0"  width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="36" y="0"  width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+
+        <!-- Zeile 2 -->
+        <rect x="0"  y="12" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="12" y="12" width="10" height="10" rx="2" ry="2" fill="#ffd952"/> <!-- Akzent -->
+        <rect x="24" y="12" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="36" y="12" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+
+        <!-- Zeile 3 -->
+        <rect x="0"  y="24" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="12" y="24" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="24" y="24" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="36" y="24" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+
+        <!-- Zeile 4 -->
+        <rect x="0"  y="36" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="12" y="36" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="24" y="36" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+        <rect x="36" y="36" width="10" height="10" rx="2" ry="2" fill="#37a4ff"/>
+    </g>
+</svg>

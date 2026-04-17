@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="600" height="110"
+     viewBox="0 0 600 110">
+
+  <defs>
+    <style>
+      .blue { fill: #37a4ff; }
+      .yellow { fill: #ffd952; }
+      .text { fill: #37a4ff; font-family: 'Inter', sans-serif; }
+    </style>
+  </defs>
+
+  <g transform="translate(5,5)">
+    <g id="matrix">
+      <rect x="0"  y="0"  width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="25" y="0"  width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="50" y="0"  width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="75" y="0"  width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="0"  y="25" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="25" y="25" width="20" height="20" rx="3" ry="3" class="yellow"/>
+      <rect x="50" y="25" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="75" y="25" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="0"  y="50" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="25" y="50" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="50" y="50" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="75" y="50" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="0"  y="75" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="25" y="75" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="50" y="75" width="20" height="20" rx="3" ry="3" class="blue"/>
+      <rect x="75" y="75" width="20" height="20" rx="3" ry="3" class="blue"/>
+    </g>
+
+    <text x="115" y="73" font-size="70" letter-spacing="2" class="text">UNITMATRIX</text>
+  </g>
+</svg>

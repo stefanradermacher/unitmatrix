@@ -1,0 +1,24 @@
+{
+  "name": "UnitMatrix",
+  "short_name": "UnitMatrix",
+  "description": "Instantly convert units — fast, accurate, and privacy-respecting.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0d1a",
+  "theme_color": "#d9efff",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/img/og-image.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
