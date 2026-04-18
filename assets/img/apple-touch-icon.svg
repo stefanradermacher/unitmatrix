@@ -10,7 +10,7 @@
   </defs>
 
   <!-- Background -->
-  <rect width="180" height="180" rx="38" ry="38" fill="#0d0d1a"/>
+  <rect width="180" height="180" rx="38" ry="38" fill="#eef7ff"/>
 
   <!-- 4×4 matrix, centered: cell=28px, gap=8px, total=4*28+3*8=136px → offset=22 -->
   <g transform="translate(22, 22)">
