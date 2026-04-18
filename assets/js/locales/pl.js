@@ -22,6 +22,14 @@ export default {
         footerSupportText: "UnitMatrix jest projektem niekomercyjnym i pozostanie bezpłatny. Jeśli chcesz wesprzeć rozwój, {link}.",
         footerSupportLink: "kliknij tutaj",
 
+        // About modal
+        aboutLink:  "O projekcie",
+        aboutTitle: "O UnitMatrix",
+        aboutP1:    "UnitMatrix to szybkie narzędzie dbające o prywatność, służące do przeliczania jednostek. Wszystkie obliczenia odbywają się lokalnie w Twojej przeglądarce — Twoje dane nigdy nie opuszczają urządzenia.",
+        aboutP2:    "UnitMatrix obsługuje ponad 200 jednostek w 24 kategoriach.",
+        aboutP3:    "Open source, licencja MIT.",
+        aboutDepsLabel: "Użyte komponenty open source:",
+
         privacyLink: "Prywatność",
         privacyTitle: "Prywatność i wykorzystanie danych",
         privacyP1: "UnitMatrix nie przechowuje żadnych danych osobowych na serwerze.",

@@ -22,6 +22,14 @@ export default {
         footerSupportText: "UnitMatrix is gratis en niet-commercieel. Als je de ontwikkeling wilt steunen, {link}.",
         footerSupportLink: "klik hier",
 
+        // About modal
+        aboutLink:  "Over",
+        aboutTitle: "Over UnitMatrix",
+        aboutP1:    "UnitMatrix is een snel en privacyvriendelijk hulpmiddel voor het omzetten van eenheden. Alle berekeningen worden lokaal in uw browser uitgevoerd — uw gegevens verlaten uw apparaat nooit.",
+        aboutP2:    "UnitMatrix ondersteunt meer dan 200 eenheden in 24 categorieën.",
+        aboutP3:    "Open source, MIT-licentie.",
+        aboutDepsLabel: "Gebruikte open source componenten:",
+
         privacyLink: "Privacy",
         privacyTitle: "Privacy & Gegevensgebruik",
         privacyP1: "UnitMatrix slaat geen persoonlijke gegevens op de server op.",

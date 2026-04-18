@@ -801,6 +801,22 @@ select:hover {
     text-decoration: underline;
 }
 
+/* Deps list in About modal */
+.modal-deps {
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    font-size: 0.72rem;
+    color: var(--text-subtle);
+    line-height: 1.7;
+}
+
+.modal-deps p {
+    font-size: 0.72rem;
+    color: var(--text-subtle);
+    margin: 0 0 6px;
+}
+
 /* Support modal buttons */
 
 .support-button-row {

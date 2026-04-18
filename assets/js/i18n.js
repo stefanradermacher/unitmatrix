@@ -73,6 +73,37 @@ export function applyLocale(DOM, config) {
         DOM.footerSupport.appendChild(document.createTextNode(parts[1] || ""));
     }
 
+    if (DOM.aboutLink && ui.aboutLink) DOM.aboutLink.textContent = ui.aboutLink;
+    if (DOM.aboutModalTitle && ui.aboutTitle) DOM.aboutModalTitle.textContent = ui.aboutTitle;
+    if (DOM.aboutModalBody) {
+        DOM.aboutModalBody.textContent = "";
+        [ui.aboutP1, ui.aboutP2, ui.aboutP3].filter(Boolean).forEach((text) => {
+            const p = document.createElement("p");
+            p.textContent = text;
+            DOM.aboutModalBody.appendChild(p);
+        });
+
+        const deps = document.createElement("div");
+        deps.className = "modal-deps";
+        const depsLabel = document.createElement("p");
+        depsLabel.textContent = ui.aboutDepsLabel || "Open source components used:";
+        deps.appendChild(depsLabel);
+        [
+            { name: "Inter", author: "The Inter Project Authors", license: "SIL Open Font License 1.1", url: "https://github.com/rsms/inter" },
+        ].forEach(({ name, author, license, url }) => {
+            const p = document.createElement("p");
+            const a = document.createElement("a");
+            a.href = url;
+            a.target = "_blank";
+            a.rel = "noopener";
+            a.textContent = name;
+            p.appendChild(a);
+            p.appendChild(document.createTextNode(` — ${author} — ${license}`));
+            deps.appendChild(p);
+        });
+        DOM.aboutModalBody.appendChild(deps);
+    }
+
     if (DOM.privacyLink && ui.privacyLink) DOM.privacyLink.textContent = ui.privacyLink;
     if (DOM.privacyModalTitle && ui.privacyTitle) {
         DOM.privacyModalTitle.textContent = ui.privacyTitle;

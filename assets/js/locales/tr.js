@@ -25,6 +25,14 @@ export default {
         descriptionTag:
             "UnitMatrix ile birimleri anında dönüştürün: hızlı, doğru ve gizliliğe saygılı, izleme veya analiz yok.",
 
+        // About modal
+        aboutLink:  "Hakkında",
+        aboutTitle: "UnitMatrix Hakkında",
+        aboutP1:    "UnitMatrix, birimleri dönüştürmek için hızlı ve gizliliğe saygılı bir araçtır. Tüm hesaplamalar tarayıcınızda yerel olarak gerçekleşir — verileriniz cihazınızı terk etmez.",
+        aboutP2:    "UnitMatrix, 24 kategoride 200'den fazla birimi destekler.",
+        aboutP3:    "Açık kaynak, MIT lisansı.",
+        aboutDepsLabel: "Kullanılan açık kaynak bileşenler:",
+
         // Privacy
         privacyLink: "Gizlilik",
         privacyTitle: "Gizlilik ve Veri Kullanımı",

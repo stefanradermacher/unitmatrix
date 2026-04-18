@@ -21,6 +21,14 @@ export default {
         footerSupportText: "UnitMatrix は非商業的な無料プロジェクトです。開発を支援したい方は{link}してください。",
         footerSupportLink: "こちらをクリック",
 
+        // About modal
+        aboutLink:  "このツールについて",
+        aboutTitle: "UnitMatrix について",
+        aboutP1:    "UnitMatrix は、単位を変換するための高速でプライバシーに配慮したツールです。すべての計算はブラウザ内でローカルに行われます — データがデバイス外に出ることはありません。",
+        aboutP2:    "UnitMatrix は 24 カテゴリにわたる 200 以上の単位をサポートしています。",
+        aboutP3:    "オープンソース、MITライセンス。",
+        aboutDepsLabel: "使用しているオープンソースコンポーネント：",
+
         privacyLink: "プライバシー",
         privacyTitle: "プライバシーとデータの利用",
         privacyP1: "UnitMatrix はサーバーに個人データを保存しません。",

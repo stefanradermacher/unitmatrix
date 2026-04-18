@@ -175,6 +175,8 @@
     <footer class="footer">
         <div id="footerSupport"></div>
         <div id="footerLinks">
+            <a href="#" id="aboutLink"></a>
+            <span aria-hidden="true"> · </span>
             <a href="/impressum.html" id="impressumLink"></a>
             <span aria-hidden="true"> · </span>
             <a href="/datenschutz.html" id="privacyLink"></a>
@@ -184,6 +186,18 @@
             <span>&copy; 2026 UnitMatrix</span>
         </div>
     </footer>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal" aria-hidden="true">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle">
+            <button type="button" class="modal-close" aria-label="Close about dialog" data-modal-close>
+                &times;
+            </button>
+            <h2 id="aboutModalTitle"></h2>
+            <div id="aboutModalBody"></div>
+        </div>
+    </div>
 
     <!-- Privacy Modal -->
     <div id="privacyModal" class="modal" aria-hidden="true">

@@ -22,6 +22,14 @@ export default {
         footerSupportText: "UnitMatrix ist kostenlos und nicht-kommerziell. Wenn du die Entwicklung unterstützen möchtest, {link}.",
         footerSupportLink: "klicke hier",
 
+        // Über-Modal
+        aboutLink:  "Über",
+        aboutTitle: "Über UnitMatrix",
+        aboutP1:    "UnitMatrix ist ein schnelles, datenschutzfreundliches Werkzeug zum Umrechnen von Einheiten. Alle Berechnungen finden lokal in deinem Browser statt — deine Daten verlassen dein Gerät nicht.",
+        aboutP2:    "UnitMatrix unterstützt über 200 Einheiten aus 24 Kategorien.",
+        aboutP3:    "Open Source, MIT-lizenziert.",
+        aboutDepsLabel: "Verwendete Open-Source-Komponenten:",
+
         // NEU: Datenschutzhinweis
         privacyLink: "Datenschutz",
         privacyTitle: "Datenschutz & Datennutzung",

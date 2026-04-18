@@ -25,6 +25,14 @@ export default {
         descriptionTag:
             "Convierte unidades al instante con UnitMatrix: rápido, preciso y respetuoso con tu privacidad, sin seguimiento.",
 
+        // About modal
+        aboutLink:  "Acerca de",
+        aboutTitle: "Acerca de UnitMatrix",
+        aboutP1:    "UnitMatrix es una herramienta rápida y respetuosa con la privacidad para convertir unidades. Todos los cálculos se realizan localmente en tu navegador — tus datos nunca abandonan tu dispositivo.",
+        aboutP2:    "UnitMatrix admite más de 200 unidades en 24 categorías.",
+        aboutP3:    "Código abierto, licencia MIT.",
+        aboutDepsLabel: "Componentes de código abierto utilizados:",
+
         // Privacy modal
         privacyLink: "Privacidad",
         privacyTitle: "Privacidad y uso de datos",

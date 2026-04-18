@@ -274,6 +274,13 @@ function bindEvents() {
         });
     }
 
+    if (DOM.aboutLink && DOM.aboutModal) {
+        DOM.aboutLink.addEventListener("click", (event) => {
+            event.preventDefault();
+            openModal(DOM.aboutModal);
+        });
+    }
+
     if (DOM.privacyLink && DOM.privacyModal) {
         DOM.privacyLink.addEventListener("click", (event) => {
             event.preventDefault();
@@ -358,6 +365,11 @@ async function init() {
         belowAbsZeroWarn: document.getElementById("belowAbsZeroWarn"),
         metaDescription:  document.querySelector('meta[name="description"]'),
         metaThemeColor:   document.querySelector('meta[name="theme-color"]'),
+
+        aboutModal:        document.getElementById("aboutModal"),
+        aboutLink:         document.getElementById("aboutLink"),
+        aboutModalTitle:   document.getElementById("aboutModalTitle"),
+        aboutModalBody:    document.getElementById("aboutModalBody"),
 
         privacyModal:      document.getElementById("privacyModal"),
         privacyLink:       document.getElementById("privacyLink"),

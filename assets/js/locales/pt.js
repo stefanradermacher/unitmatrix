@@ -22,6 +22,14 @@ export default {
         footerSupportText: "UnitMatrix é um projeto não comercial e continuará gratuito. Se quiser apoiar o desenvolvimento, {link}.",
         footerSupportLink: "clique aqui",
 
+        // About modal
+        aboutLink:  "Sobre",
+        aboutTitle: "Sobre o UnitMatrix",
+        aboutP1:    "O UnitMatrix é uma ferramenta rápida e respeitadora da privacidade para converter unidades. Todos os cálculos são efetuados localmente no seu browser — os seus dados nunca saem do dispositivo.",
+        aboutP2:    "O UnitMatrix suporta mais de 200 unidades em 24 categorias.",
+        aboutP3:    "Código aberto, licença MIT.",
+        aboutDepsLabel: "Componentes open source utilizados:",
+
         privacyLink: "Privacidade",
         privacyTitle: "Privacidade e Utilização de Dados",
         privacyP1: "O UnitMatrix não armazena quaisquer dados pessoais no servidor.",
