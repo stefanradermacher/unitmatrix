@@ -3,15 +3,12 @@ let currentModal       = null;
 
 export function openModal(modalEl) {
     if (!modalEl) return;
-    lastFocusedElement =
-        document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    lastFocusedElement = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     currentModal = modalEl;
     currentModal.classList.add("is-open");
     currentModal.setAttribute("aria-hidden", "false");
-    const focusTarget =
-        currentModal.querySelector(".modal-close") ||
-        currentModal.querySelector(".modal-dialog");
-    if (focusTarget?.focus) focusTarget.focus();
+    const focusTarget = currentModal.querySelector(".modal-close") || currentModal.querySelector(".modal-dialog");
+    focusTarget?.focus?.();
     document.addEventListener("keydown", trapFocus);
 }
 
@@ -20,14 +17,14 @@ export function closeModal() {
     currentModal.classList.remove("is-open");
     currentModal.setAttribute("aria-hidden", "true");
     document.removeEventListener("keydown", trapFocus);
-    if (lastFocusedElement?.focus) lastFocusedElement.focus();
+    lastFocusedElement?.focus?.();
     currentModal = null;
 }
 
 function trapFocus(event) {
     const focusable = Array.from(
         currentModal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
-    ).filter(el => !el.disabled);
+    ).filter((el) => !el.disabled);
 
     if (focusable.length === 0) {
         if (event.key === "Escape") closeModal();
