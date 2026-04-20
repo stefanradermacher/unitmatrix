@@ -36,8 +36,8 @@ export default {
         privacyP3: "利便性のため、一部の設定（言語・テーマなど）はブラウザのローカルストレージにのみ保存されます。このデータがお使いのデバイス外に出ることはありません。",
 
         supportTitle: "UnitMatrix を支援する",
-        supportIntro: "UnitMatrix は非商業的な個人プロジェクトであり、常に無料で利用できます。",
-        supportP1: "開発とホスティングの費用を支援したい場合は、少額の寄付をご検討ください。",
+        supportIntro: "UnitMatrix は非商業的な趣味のプロジェクトで、あなたにとって無料のままです。",
+        supportP1: "開発とホスティングを任意の寄付で支援したい場合は、こちらからどうぞ。",
         supportPaypalLabel: "PayPal で寄付する",
         supportOtherLabel: "その他の支援方法",
 

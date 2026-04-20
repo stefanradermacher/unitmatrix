@@ -26,8 +26,8 @@ const OWNER_ADDRESS = [
     "50679 Köln",
     "Deutschland",
 ];
-const EMAIL             = ["info", "unitmatrix.net"].join("@");
-const DONATE_PAYPAL_URL = "https://paypal.me/UnitMatrix";
+const EMAIL             = ["unitmatrix", "stefanradermacher.com"].join("@");
+const DONATE_PAYPAL_URL = "https://paypal.me/srprojects";
 
 const CONFIG = { OWNER_ADDRESS, EMAIL, DONATE_PAYPAL_URL };
 

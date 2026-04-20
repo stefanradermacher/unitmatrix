@@ -39,8 +39,8 @@ export default {
 
         // Support-Modal
         supportTitle: "UnitMatrix unterstützen",
-        supportIntro: "UnitMatrix ist ein nicht-kommerzielles Nebenprojekt und bleibt für dich kostenlos.",
-        supportP1: "Wenn du trotzdem Entwicklung und Hosting mit einer kleinen Spende unterstützen möchtest, kannst du das hier tun.",
+        supportIntro: "UnitMatrix ist ein nicht-kommerzielles Hobby-Projekt und bleibt für dich kostenlos.",
+        supportP1: "Wenn du die Weiterentwicklung und das Hosting mit einer freiwilligen Spende unterstützen möchtest, kannst du das hier tun.",
         supportPaypalLabel: "Über PayPal spenden",
         supportOtherLabel: "Weitere Unterstützungsmöglichkeiten",
 

@@ -37,8 +37,8 @@ export default {
         privacyP3: "Dla wygody niektóre preferencje (język, motyw) są przechowywane w lokalnym magazynie przeglądarki. Dane te nigdy nie opuszczają Twojego urządzenia.",
 
         supportTitle: "Wesprzyj UnitMatrix",
-        supportIntro: "UnitMatrix to prywatny projekt niekomercyjny i zawsze pozostanie bezpłatny.",
-        supportP1: "Jeśli chcesz wesprzeć rozwój i koszty hostingu, możesz przekazać niewielką darowiznę.",
+        supportIntro: "UnitMatrix to niekomercyjny projekt hobbystyczny i pozostaje dla ciebie bezpłatny.",
+        supportP1: "Jeśli chcesz wesprzeć dalszy rozwój i hosting dobrowolną darowizną, możesz to zrobić tutaj.",
         supportPaypalLabel: "Przekaż darowiznę przez PayPal",
         supportOtherLabel: "Inne sposoby wsparcia",
 

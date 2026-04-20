@@ -42,8 +42,8 @@ export default {
 
         // Support modal
         supportTitle: "Apoyar UnitMatrix",
-        supportIntro: "UnitMatrix es un proyecto privado y sin ánimo de lucro, y siempre será gratuito.",
-        supportP1: "Si deseas apoyar el desarrollo o los costes de alojamiento, puedes realizar una pequeña donación.",
+        supportIntro: "UnitMatrix es un proyecto de afición no comercial y sigue siendo gratuito para ti.",
+        supportP1: "Si deseas apoyar el desarrollo y el alojamiento con una donación voluntaria, puedes hacerlo aquí.",
         supportPaypalLabel: "Donar con PayPal",
         supportOtherLabel: "Otras formas de apoyar",
 

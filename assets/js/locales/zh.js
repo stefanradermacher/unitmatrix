@@ -36,8 +36,8 @@ export default {
         privacyP3: "为方便起见，部分偏好设置（如语言、主题）仅存储在您浏览器的本地存储中，这些数据不会离开您的设备。",
 
         supportTitle: "支持 UnitMatrix",
-        supportIntro: "UnitMatrix 是一个私人非商业项目，将永远免费提供。",
-        supportP1: "如果您希望支持开发和托管费用，可以进行小额捐款。",
+        supportIntro: "UnitMatrix 是一个非商业性的业余爱好项目，对你免费。",
+        supportP1: "如果你想通过自愿捐款支持进一步的开发和托管，可以在此处进行。",
         supportPaypalLabel: "通过 PayPal 捐款",
         supportOtherLabel: "其他支持方式",
 

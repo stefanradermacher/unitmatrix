@@ -37,8 +37,8 @@ export default {
         privacyP3: "Voor uw gemak worden enkele voorkeuren (taal, thema) opgeslagen in de lokale opslag van uw browser. Deze gegevens verlaten uw apparaat nooit.",
 
         supportTitle: "UnitMatrix steunen",
-        supportIntro: "UnitMatrix is een niet-commercieel project en blijft altijd gratis.",
-        supportP1: "Als u de ontwikkeling en hostingkosten wilt steunen, kunt u een kleine donatie doen.",
+        supportIntro: "UnitMatrix is een niet-commercieel hobbyproject en blijft gratis voor jou.",
+        supportP1: "Als je de verdere ontwikkeling en hosting met een vrijwillige donatie wilt ondersteunen, kun je dat hier doen.",
         supportPaypalLabel: "Doneren via PayPal",
         supportOtherLabel: "Andere manieren om te steunen",
 
