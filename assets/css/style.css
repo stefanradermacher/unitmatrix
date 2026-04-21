@@ -22,6 +22,7 @@
     --tile-bg: #d9efff;
     --tile-border: #b9d4e6;
     --accent-yellow: #ffd952;
+    --selection: rgba(55,164,255,0.25);
 }
 
 /* UnitMatrix Space – default dark theme, navy blue */
@@ -36,6 +37,7 @@
     --tile-bg: #111c2f;
     --tile-border: #415a77;
     --accent-yellow: #ffd952;
+    --selection: rgba(55,164,255,0.35);
 }
 
 /* UnitMatrix Solar – warm light yellow */
@@ -50,6 +52,7 @@
     --tile-bg: #ffecc2;
     --tile-border: #f3d08a;
     --accent-yellow: #56b9ff;
+    --selection: rgba(243,176,50,0.35);
 }
 
 /* UnitMatrix Sylvan - light green */
@@ -64,6 +67,7 @@
     --tile-bg: #e1f3e1;
     --tile-border: #b6d8b6;
     --accent-yellow: #ffd952;
+    --selection: rgba(80,160,80,0.25);
 }
 
 /* UnitMatrix Strawberry - light pink */
@@ -78,6 +82,7 @@
     --tile-bg: #ffe3e8;
     --tile-border: #f5c5cd;
     --accent-yellow: #ffd952;
+    --selection: rgba(210,80,110,0.25);
 }
 
 /* UnitMatrix Slate – OLED dark, near-black */
@@ -92,6 +97,7 @@
     --tile-bg: #0f0f1a;
     --tile-border: #252538;
     --accent-yellow: #ffd952;
+    --selection: rgba(55,164,255,0.40);
 }
 
 /* UnitMatrix Sand – warm beige */
@@ -106,6 +112,7 @@
     --tile-bg: #ede3d0;
     --tile-border: #d6c4a0;
     --accent-yellow: #e07b30;
+    --selection: rgba(200,150,60,0.30);
 }
 
 /* UnitMatrix Sterling – cool silver grey */
@@ -120,6 +127,7 @@
     --tile-bg: #e0e4ec;
     --tile-border: #bcc4d8;
     --accent-yellow: #ffd952;
+    --selection: rgba(100,120,180,0.25);
 }
 
 /* Fonts */
@@ -142,6 +150,10 @@
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+::selection {
+    background: var(--selection);
 }
 
 html,
