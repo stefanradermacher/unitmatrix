@@ -28,6 +28,8 @@ export default {
         aboutP1:    "UnitMatrix ist ein schnelles, datenschutzfreundliches Werkzeug zum Umrechnen von Einheiten. Alle Berechnungen finden lokal in deinem Browser statt — deine Daten verlassen dein Gerät nicht.",
         aboutP2:    "UnitMatrix unterstützt über 200 Einheiten aus 24 Kategorien.",
         aboutP3:    "Open Source, MIT-lizenziert.",
+        aboutMoreProjects: "Weitere Werkzeuge von mir: {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Verwendete Open-Source-Komponenten:",
 
         // NEU: Datenschutzhinweis

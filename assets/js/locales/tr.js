@@ -31,6 +31,8 @@ export default {
         aboutP1:    "UnitMatrix, birimleri dönüştürmek için hızlı ve gizliliğe saygılı bir araçtır. Tüm hesaplamalar tarayıcınızda yerel olarak gerçekleşir — verileriniz cihazınızı terk etmez.",
         aboutP2:    "UnitMatrix, 24 kategoride 200'den fazla birimi destekler.",
         aboutP3:    "Açık kaynak, MIT lisansı.",
+        aboutMoreProjects: "Benden diğer araçlar: {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Kullanılan açık kaynak bileşenler:",
 
         // Privacy

@@ -28,6 +28,8 @@ export default {
         aboutP1:    "UnitMatrix is een snel en privacyvriendelijk hulpmiddel voor het omzetten van eenheden. Alle berekeningen worden lokaal in uw browser uitgevoerd — uw gegevens verlaten uw apparaat nooit.",
         aboutP2:    "UnitMatrix ondersteunt meer dan 200 eenheden in 24 categorieën.",
         aboutP3:    "Open source, MIT-licentie.",
+        aboutMoreProjects: "Meer tools van mij: {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Gebruikte open source componenten:",
 
         privacyLink: "Privacy",

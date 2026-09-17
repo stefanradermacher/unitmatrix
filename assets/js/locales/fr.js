@@ -31,6 +31,8 @@ export default {
         aboutP1:    "UnitMatrix est un outil rapide et respectueux de la vie privée pour convertir des unités. Tous les calculs s'effectuent localement dans votre navigateur — vos données ne quittent jamais votre appareil.",
         aboutP2:    "UnitMatrix prend en charge plus de 200 unités réparties en 24 catégories.",
         aboutP3:    "Open source, licence MIT.",
+        aboutMoreProjects: "D'autres outils de ma part : {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Composants open source utilisés :",
 
         // Privacy modal

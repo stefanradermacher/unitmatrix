@@ -28,6 +28,8 @@ export default {
         aboutP1:    "UnitMatrix to szybkie narzędzie dbające o prywatność, służące do przeliczania jednostek. Wszystkie obliczenia odbywają się lokalnie w Twojej przeglądarce — Twoje dane nigdy nie opuszczają urządzenia.",
         aboutP2:    "UnitMatrix obsługuje ponad 200 jednostek w 24 kategoriach.",
         aboutP3:    "Open source, licencja MIT.",
+        aboutMoreProjects: "Więcej narzędzi ode mnie: {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Użyte komponenty open source:",
 
         privacyLink: "Prywatność",

@@ -28,6 +28,8 @@ export default {
         aboutP1:    "O UnitMatrix é uma ferramenta rápida e respeitadora da privacidade para converter unidades. Todos os cálculos são efetuados localmente no seu browser — os seus dados nunca saem do dispositivo.",
         aboutP2:    "O UnitMatrix suporta mais de 200 unidades em 24 categorias.",
         aboutP3:    "Código aberto, licença MIT.",
+        aboutMoreProjects: "Mais ferramentas minhas: {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Componentes open source utilizados:",
 
         privacyLink: "Privacidade",

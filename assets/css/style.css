@@ -768,6 +768,10 @@ select:hover {
     padding: 20px 24px 22px;
 }
 
+#aboutModal .modal-dialog {
+    max-width: 560px;
+}
+
 .modal-dialog h2 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -811,6 +815,52 @@ select:hover {
 
 #footerLinks a:hover {
     text-decoration: underline;
+}
+
+.about-more-projects {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.about-monogram {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    opacity: 0.8;
+    flex-shrink: 0;
+}
+
+/* Show the right monogram variant per theme (mirrors stefanradermacher.com/projects) */
+.about-monogram-light { display: none; }
+.about-monogram-dark  { display: block; }
+@media (prefers-color-scheme: light) {
+    .about-monogram-light { display: block; }
+    .about-monogram-dark  { display: none; }
+}
+:root[data-theme="sky"] .about-monogram-light,
+:root[data-theme="solar"] .about-monogram-light,
+:root[data-theme="sylvan"] .about-monogram-light,
+:root[data-theme="strawberry"] .about-monogram-light,
+:root[data-theme="sand"] .about-monogram-light,
+:root[data-theme="sterling"] .about-monogram-light {
+    display: block;
+}
+:root[data-theme="sky"] .about-monogram-dark,
+:root[data-theme="solar"] .about-monogram-dark,
+:root[data-theme="sylvan"] .about-monogram-dark,
+:root[data-theme="strawberry"] .about-monogram-dark,
+:root[data-theme="sand"] .about-monogram-dark,
+:root[data-theme="sterling"] .about-monogram-dark {
+    display: none;
+}
+:root[data-theme="space"] .about-monogram-light,
+:root[data-theme="slate"] .about-monogram-light {
+    display: none;
+}
+:root[data-theme="space"] .about-monogram-dark,
+:root[data-theme="slate"] .about-monogram-dark {
+    display: block;
 }
 
 /* Deps list in About modal */

@@ -27,6 +27,8 @@ export default {
         aboutP1:    "UnitMatrix 是一款快速、注重隐私的单位换算工具。所有计算均在您的浏览器本地进行 — 您的数据永远不会离开您的设备。",
         aboutP2:    "UnitMatrix 支持 24 个类别中的 200 多个单位。",
         aboutP3:    "开源，MIT许可证。",
+        aboutMoreProjects: "更多我的工具：{link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "所使用的开源组件：",
 
         privacyLink: "隐私",

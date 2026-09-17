@@ -31,6 +31,8 @@ export default {
         aboutP1:    "UnitMatrix — швидкий інструмент з захистом конфіденційності для конвертації одиниць вимірювання. Всі обчислення відбуваються локально у вашому браузері — ваші дані ніколи не залишають пристрій.",
         aboutP2:    "UnitMatrix підтримує понад 200 одиниць у 24 категоріях.",
         aboutP3:    "Відкритий вихідний код, ліцензія MIT.",
+        aboutMoreProjects: "Інші мої інструменти: {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Використані компоненти з відкритим кодом:",
 
         // Privacy

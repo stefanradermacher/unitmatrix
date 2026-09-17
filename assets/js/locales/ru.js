@@ -31,6 +31,8 @@ export default {
         aboutP1:    "UnitMatrix — быстрый инструмент с защитой конфиденциальности для перевода единиц измерения. Все вычисления происходят локально в браузере — ваши данные никогда не покидают устройство.",
         aboutP2:    "UnitMatrix поддерживает более 200 единиц в 24 категориях.",
         aboutP3:    "Открытый исходный код, лицензия MIT.",
+        aboutMoreProjects: "Другие мои инструменты: {link}",
+        aboutMoreProjectsLink: "stefanradermacher.com/projects",
         aboutDepsLabel: "Используемые компоненты с открытым исходным кодом:",
 
         // Privacy modal
