@@ -6,7 +6,7 @@ A fast, accurate, and privacy-friendly unit converter. No tracking, no ads, no b
 
 ## Features
 
-- **22 unit categories:** Length, Area, Volume, Mass, Temperature, Time, Speed, Pressure, Energy, Power, Force, Torque, Frequency, Voltage, Current, Data Storage, Resistance, Density, Flow, Luminance, Radioactivity, Viscosity
+- **24 unit categories:** Length, Area, Volume, Mass, Temperature, Time, Speed, Pressure, Energy, Power, Force, Torque, Voltage, Current, Frequency, Data Storage, Resistance, Density, Fuel Economy, Flow, Luminance, Radioactivity, Viscosity, Data Rate
 - **12 languages:** English, German, French, Spanish, Dutch, Polish, Portuguese, Russian, Turkish, Ukrainian, Japanese, Chinese
 - **Dark / Light theme**
 - **PWA** — installable and works fully offline
