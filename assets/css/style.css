@@ -85,6 +85,21 @@
     --selection: rgba(210,80,110,0.25);
 }
 
+/* UnitMatrix Sangria – light violet */
+:root[data-theme="sangria"] {
+    --bg: #faf5ff;
+    --bg-alt: #f0e0ff;
+    --panel: #ffffff;
+    --text: #3b1f52;
+    --text-subtle: #705a85;
+    --border: #ddc2f0;
+    --highlight: #ecd6ff;
+    --tile-bg: #f0e0ff;
+    --tile-border: #ddc2f0;
+    --accent-yellow: #ffd952;
+    --selection: rgba(147,51,234,0.25);
+}
+
 /* UnitMatrix Slate – OLED dark, near-black */
 :root[data-theme="slate"] {
     --bg: #080810;
@@ -842,6 +857,7 @@ select:hover {
 :root[data-theme="solar"] .about-monogram-light,
 :root[data-theme="sylvan"] .about-monogram-light,
 :root[data-theme="strawberry"] .about-monogram-light,
+:root[data-theme="sangria"] .about-monogram-light,
 :root[data-theme="sand"] .about-monogram-light,
 :root[data-theme="sterling"] .about-monogram-light {
     display: block;
@@ -850,6 +866,7 @@ select:hover {
 :root[data-theme="solar"] .about-monogram-dark,
 :root[data-theme="sylvan"] .about-monogram-dark,
 :root[data-theme="strawberry"] .about-monogram-dark,
+:root[data-theme="sangria"] .about-monogram-dark,
 :root[data-theme="sand"] .about-monogram-dark,
 :root[data-theme="sterling"] .about-monogram-dark {
     display: none;

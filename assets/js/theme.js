@@ -4,6 +4,7 @@ export const THEMES = {
     solar:      {id: "solar",      label: "UnitMatrix Solar",      prefers: "light"},
     sylvan:     {id: "sylvan",     label: "UnitMatrix Sylvan",     prefers: "light"},
     strawberry: {id: "strawberry", label: "UnitMatrix Strawberry", prefers: "light"},
+    sangria:    {id: "sangria",    label: "UnitMatrix Sangria",    prefers: "light"},
     slate:      {id: "slate",      label: "UnitMatrix Slate",      prefers: "dark" },
     sand:       {id: "sand",       label: "UnitMatrix Sand",       prefers: "light"},
     sterling:   {id: "sterling",   label: "UnitMatrix Sterling",   prefers: "light"},
