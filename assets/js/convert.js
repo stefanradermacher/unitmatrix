@@ -10,10 +10,31 @@ export function parseLocaleNumber(raw) {
     value = value.replace(/[\s\u00A0\u202F]/g, "");
 
     if (usesCommaDecimal) {
-        if (value.includes(",")) {
-            value = value.replace(/\./g, "").replace(",", ".");
-        } else if (value.includes(".")) {
-            value = value.replace(/\./g, "");
+        const hasComma = value.includes(",");
+        const hasDot = value.includes(".");
+
+        if (hasComma && hasDot) {
+            // Mixed separators: whichever comes last is the decimal separator
+            // ("1.234,5" -> German, "1,234.5" -> pasted English format).
+            const decimalIsComma = value.lastIndexOf(",") > value.lastIndexOf(".");
+            if (decimalIsComma) {
+                value = value.replace(/\./g, "").replace(",", ".");
+            } else {
+                value = value.replace(/,/g, "");
+            }
+        } else if (hasComma) {
+            value = value.replace(",", ".");
+        } else if (hasDot) {
+            // A single dot is only a thousands separator if it forms valid
+            // grouping (e.g. "1.500", "1.234.567"). Otherwise treat it as a
+            // decimal point ("1.5") rather than silently multiplying by 10.
+            const isGrouped = /^\d{1,3}(\.\d{3})+$/.test(value);
+            if (isGrouped) {
+                value = value.replace(/\./g, "");
+            } else if ((value.match(/\./g) || []).length > 1) {
+                // Multiple dots that don't form valid grouping is ambiguous.
+                return NaN;
+            }
         }
     } else {
         value = value.replace(/,/g, "");
